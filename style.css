@@ -1,0 +1,115 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('/assets/fonts/Poppins-Bold.ttf') format('truetype');
+    font-family: 'Poppins ExtraBoldItalic';
+    src:url('/assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype')
+}
+
+body{
+    background-color: rgb(240,240,240);
+}
+form{
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    font-family: 'Poppins Bold', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+}
+#day,#month,#year{
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Poppins Bold', sans-serif;
+    border: 1px solid rgb(123,88,244);
+    font-size: 20px;
+    font-weight: 700;
+    padding:4px;
+    padding-left: 8px;
+}
+.container{
+    padding: 20px;
+    background-color: white;
+    height: 100%;
+    width:450px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    border-radius: 20px 20px 100px 20px;
+}
+.line{
+    width: 450px;
+    background-color: rgb(219, 219, 219);
+    height: 3px;
+    z-index: 1;
+    
+}
+img{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.get{
+    
+    background-color: black;
+    width: 50px;
+    height: 100%;
+    border-radius: 100%;
+    padding: 8px;
+    margin-left: 350px;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+div .get:hover{
+    cursor: pointer;
+    background-color: rgb(123,88,244);
+}
+label{
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+h1{
+    font-family: 'Poppins ExtraBoldItalic';
+    font-weight: 700;
+    font-size: 50px;
+    line-height : 0.5;
+}
+h1 span{
+    font-family: 'Poppins ExtraBoldItalic';
+    color:rgb(123,88,244);
+    font-weight: 700;
+}
+#day:active,#month:active,#yea:active{
+    border: 1px  solid rgb(123,88,244);
+}
+@media only screen and (max-width:430px) {
+    .container{
+        display: flex;
+        width: 100%;
+    }
+    .get{
+        margin-left:auto;
+        margin-right: auto;
+        align-items: center;
+        margin-bottom: 50px;
+        justify-content: center;
+        background-color: rgb(123,88,244);
+    }
+    .line{
+        width: 300px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    #day,#month,#year{
+        width: 80px;
+    }
+    
+}
