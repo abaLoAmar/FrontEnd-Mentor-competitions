@@ -2,9 +2,9 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 @font-face {
     font-family: 'Poppins Bold';
-    src: url('/assets/fonts/Poppins-Bold.ttf') format('truetype');
+    src: url('Poppins-Bold.ttf') format('truetype');
     font-family: 'Poppins ExtraBoldItalic';
-    src:url('/assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype')
+    src:url('Poppins-ExtraBoldItalic.ttf') format('truetype')
 }
 
 body{
